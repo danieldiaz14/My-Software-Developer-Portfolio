@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
-baseurl: "" # the subpath of your site, e.g. /blog/ (optional)
-url: "http://www.your-domain.com" # the base hostname & protocol for your site
+baseurl: ""
+url: https://danieldiaz14.github.io/
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
@@ -18,13 +18,13 @@ theme_settings:
 
   # Icons
   rss: true;
-  email_address: "DanielDiaz129@gmail.com"# Full email address, e.g. "sam@example.com"
+  email_address: "DanielDiaz129@gmail.com"
   behance:
   bitbucket:
   dribbble:
-  facebook: https://www.facebook.com/DannyDiazMedrano
+  facebook: DannyDiazMedrano
   flickr:
-  github: # github profile name, e.g. "madebymunsters"
+  github: https://github.com/danieldiaz14
   google_plus:
   instagram:
   linkedin:  # Full URL
