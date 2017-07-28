@@ -11,10 +11,9 @@ theme_settings:
   # Header and footer text
   header_text: >
      <h1>Software Developer</h1>
-     <p>Fluent in these langauges: HTML5, CSS3, Javascript, AngularJS</p>
+     <p>Fluent in these langauges: HTML5, CSS3, Javascript, Ruby, Ruby on Rails, AngularJS</p>
   header_text_feature_image:
   footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> and made with love.
 
   # Icons
   rss: true;
