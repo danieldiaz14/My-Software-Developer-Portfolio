@@ -11,14 +11,13 @@ theme_settings:
   # Header and footer text
   header_text: >
      <h1>Software Engineer</h1>
-     <img src="img/me.jpg/>"
      <p>Front-End Technologies: HTML5, CSS3, Javascript, AngularJS, ReactJS, Ruby</p>
      <p>Back-End Technologies: NodeJS,  Ruby on Rails, AngularJS</p>
   header_text_feature_image:
   footer_text: >
 
   # Icons
-  rss: false;
+  rss:
   email_address: "DanielDiaz129@gmail.com"
   behance:
   bitbucket:
