@@ -10,23 +10,25 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-     <h1>Software Developer</h1>
-     <p>Fluent in these langauges: HTML5, CSS3, Javascript, Ruby, Ruby on Rails, AngularJS</p>
+     <h1>Software Engineer</h1>
+     <img src="img/me.jpg/>"
+     <p>Front-End Technologies: HTML5, CSS3, Javascript, AngularJS, ReactJS, Ruby</p>
+     <p>Back-End Technologies: NodeJS,  Ruby on Rails, AngularJS</p>
   header_text_feature_image:
   footer_text: >
 
   # Icons
-  rss: true;
+  rss: false;
   email_address: "DanielDiaz129@gmail.com"
   behance:
   bitbucket:
   dribbble:
   facebook: DannyDiazMedrano
   flickr:
-  github: https://github.com/danieldiaz14
+  github: danieldiaz14
   google_plus:
   instagram:
-  linkedin:  # Full URL
+  linkedin: https://www.linkedin.com/in/daniel-diaz-medrano-5b4babb2/  # Full URL
   pinterest:
   reddit:
   soundcloud:
