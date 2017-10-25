@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Glow By Glory
-thumbnail-path: "img/Glow By Glory.JPG"
+thumbnail-path: "img/Glory.png"
 short-description: A freelance project created to help a client promote their business online.
 
 ---
 
 {:.center}
-![]({{ site.baseurl }}/img/Glow By Glory.JPG)
+![]({{ site.baseurl }}/img/Glory.png)
 
 ## Project Details
 
