@@ -7,7 +7,7 @@ short-description: A freelance project created to help a client promote their bu
 ---
 
 {:.center}
-![]({{ site.baseurl }}/img/Glory.png)
+![]({{ site.baseurl }}/img/Glory.pngts)
 
 ## Project Details
 

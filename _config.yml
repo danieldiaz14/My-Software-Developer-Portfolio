@@ -11,8 +11,8 @@ theme_settings:
   # Header and footer text
   header_text: >
      <h1>Software Engineer</h1>
-     <p>Front-End Technologies: HTML5, CSS3, Javascript, AngularJS, ReactJS, Ruby</p>
-     <p>Back-End Technologies: NodeJS,  Ruby on Rails, AngularJS</p>
+     <p>Front-End Technologies: HTML5, CSS3, Javascript, Angular, TypeScript, ReactJS, JSX, Ruby</p>
+     <p>Back-End Technologies: NodeJS,  Ruby on Rails, Angular</p>
   header_text_feature_image:
   footer_text: >
 
