@@ -9,6 +9,8 @@ short-description: BlocJams is a spotify replica for playing music.
 {:.center}
 ![]({{ site.baseurl }}/img/Bloc-Jams.JPG)
 
+[Project Demo!](https://daniel-bloc-jams-angular.herokuapp.com/ "Bloc Jams Angular")
+
 ## Explanation
 
 This project was originally written in regular html and css. It used jquery to add the music playing functionality.
