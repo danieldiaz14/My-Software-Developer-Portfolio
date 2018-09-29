@@ -1,66 +1,304 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="home">
+  <head>
 
-  <div class="work">
-    <h2>My Work</h2>
-    {% for project in site.portfolio limit:3 %}
-    <div class="project">
-      <div class="project-thumb">
-        <a href="{{ project.url | prepend: site.baseurl }}">
-          <img src="{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
-        </a>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Daniel Diaz</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Favicon attempt-->
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="css/resume.min.css" rel="stylesheet">
+    <link href="css/resume.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Software Developer</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Why_me">Why me</a>
+          </li>
+        </ul>
       </div>
-      <div class="project-description">
-        <a href="{{ project.url | prepend: site.baseurl }}"><strong>{{ project.title }}</strong></a>
-        <p>{{ project.short-description }}</p>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
+    </nav>
 
-  <div class="posts">
-    <h2 class="post-header">My Posts</h2>
-    <ul>
-      {% for post in paginator.posts %}
-      <li class="post-teaser">
-        <header>
-          <h3>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-              {{ post.title }}
-            </a>
-          </h3>
-          <p class="meta">
-            {{ post.date | date: "%B %-d, %Y" }}
-          </p>
-        </header>
-        <div class="excerpt">
-          {{ post.excerpt | | strip_html | strip_newlines | truncate: 120 }}
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Daniel
+            <span class="text-primary">Diaz</span>
+          </h1>
+          <div class="subheading mb-5">37177 Cedar Blvd · Newark, CA 94560 · (510) 921-1432 ·
+            <a href="mailto:name@email.com">danieldiaz129@gmail.com</a>
+            <a target="_blank" href="https://drive.google.com/open?id=1iptPoTXCoqcK2N0MlhZPp3mBrYc8Pvyj">Resume</a>
+          </div>
+          <p class="mb-5">A Software Developer with a strong foundation in software engineering principles and specializes in web development with mobile support.</p>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/DannyDiazMedrano" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/daniel-diaz-medrano/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/danieldiaz14" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          {{ site.theme_settings.str_continue_reading }}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+      </section>
 
-  {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
-      <i class="fa fa-chevron-left"></i>
-      {{ site.theme_settings.str_prev }}
-    </a>
-    {% endif %}
-    {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
-      {{ site.theme_settings.str_next }}
-      <i class="fa fa-chevron-right"></i>
-    </a>
-    {% endif %}
-  </div>
-  {% endif %}
-</div>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Experience</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">IT - Queue Manager</h3>
+              <div class="subheading mb-3">Pure Storage</div>
+              <p>Data Storage</p>
+              <ul>
+                <li>Supervised IT requests at a Global scale and dispatched to appropiate teams and members.</li>
+                <li>Maintained and ordered equipment for National offices in the US while ensuring lowest costs and meeting quarterly budget requirements.</li>
+                <li>Wrote several PowerShell scripts to automate common tasks for the IT Help Desk Team.</li>
+                <li>Expedited requests by offering support and resolving technical issues.</li>
+              </ul>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">January 2017 - Present</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">IT - AV/CV</h3>
+              <div class="subheading mb-3">FaceBook</div>
+              <p>Social Media Applications</p>
+              <ul>
+                <li>Coordinated with IT-AV team for WayFinder testing and troubleshooting.</li>
+                <li>Triagging common issues and created documentation for data analysis for issues.</li>
+                <li>Reported issues with internal ticketing system created by FaceBook.</li>
+              </ul>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">May 2016 - November 2016</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">IT - Server Technician</h3>
+              <div class="subheading mb-3">Netflix</div>
+              <p>Streaming Entertainment</p>
+              <ul>
+                <li>Ran basic maintenance and troubleshooting on servers.</li>
+                <li>Ordered any parts that were required for maintenance and accounted for all expenses.</li>
+                <li>Set switches for network use and would use the cli to test.</li>
+              </ul>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">July 2010 - December 2011</span>
+            </div>
+          </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Bloc code school</h3>
+              <div class="subheading mb-3">Software Development Track</div>
+              <div>Computer Science - Software Development Track</div>
+              <ul>
+                <li>Javascript, jQuery, Angular</li>
+                <li>Ruby and Ruby on Rails.</li>
+                <li>Data structures, linked lists, stacks, queues, hashes, trees, graphs.</li>
+                <li>Algorithms, searching, sorting, optimization, determine complex problems, P vs NP</li>
+                <li>Databases, normalization, denormalization, Model Data Relationships, SQL, mySQL, nosql, postgres</li>
+              </ul>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">March 2017 - April 2018</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Newark Memorial High School</h3>
+              <div class="subheading mb-3">High School Diploma</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">July 2010 - July 2014</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <i class="devicons devicons-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-css3"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-javascript"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-react"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-angular"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-nodejs"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-jquery"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-ruby"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-java"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-git"></i>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3">Design Patterns</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              MVC - with Angular and Ruby on Rails</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Redux - React front-end projects</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              TDD approach finish ideas before writing code.</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Mobile Support</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Portfolio">
+        <div class="my-auto">
+          <h2 class="mb-5">Portfolio</h2>
+          <section>
+            <div class="portfolioTabs">
+                <h3><a target="_blank" href="https://daniel-bloc-jams-angular.herokuapp.com/">Bloc Jams</a></h3>
+                <a target="_blank" href="https://daniel-bloc-jams-angular.herokuapp.com/">
+                  <img src="./img/BlocJams.png">
+                </a>
+            </div>
+            <div class="portfolioTabs">
+              <h3><a target="_blank" href="https://tv-search-daniel.herokuapp.com/index.html">TV</a></h3>
+              <a target="_blank" href="https://tv-search-daniel.herokuapp.com/index.html">
+                <img src="./img/TVSearch.png" style="height: 100%; width: 100%;">
+              </a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Why_me">
+        <div class="my-auto">
+          <h2 class="mb-5">Why I Stand out</h2>
+          <p id="grabThis"></p>
+          <div class="badges">
+            <h3><a target="_blank" href=""></a>Code Wars</h3>
+            <img src="https://www.codewars.com/users/DanielDiaz12/badges/large">
+          </div>
+          <div class="badges">
+            <h3>CodeSignal</h3>
+            <a target="_blank" href="https://app.codesignal.com/profile/daniel_d63/overview">Link to profile</a>
+          </div>
+          <div class="badges">
+            <h3>Github and Repl.it</h3>
+            <a target="_blank" href="https://github.com/danieldiaz14/Engineering-Fundamentals">Engineering-Fundamentals</a>
+            <a target="_blank" href="https://repl.it/@danieldiaz">Repl.it code examples</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+    <script src="./js/custom.js"></script>
+  </body>
+
+</html>
