@@ -1,8 +1,8 @@
 {
-    "title": "Resume",
-    "name": "startbootstrap-resume",
+    "title": "Daniel online resume",
+    "name": "Daniel Diaz Medrano",
     "version": "4.1.1",
-    "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
+    "description": "Online portfolio to showcase my skills",
     "keywords": [
         "css",
         "sass",
@@ -11,19 +11,20 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/resume",
+    "homepage": "https://danieldiaz14.github.io/",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://danieldiaz14.github.io/",
+        "email": "danieldiaz129@gmail.com"
     },
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "David Miller (http://davidmiller.io/)",
+        "Daniel Diaz Medrano (https://danieldiaz14.github.io/)"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
+        "url": "https://github.com/danieldiaz14/danieldiaz14.github.io"
     },
     "dependencies": {
         "bootstrap": "4.1.1",
