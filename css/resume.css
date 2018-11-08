@@ -102,6 +102,14 @@ h2 {
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
+
+  .portfolioTabs {
+    display: inline-block; 
+    position: relative; 
+    margin-left: 10px;
+    width: 400px; 
+    height: 300px
+  }
 }
 
 section.resume-section {
