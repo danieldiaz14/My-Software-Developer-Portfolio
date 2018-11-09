@@ -102,14 +102,6 @@ h2 {
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
-
-  .portfolioTabs {
-    display: inline-block; 
-    position: relative; 
-    margin-left: 10px;
-    width: 400px; 
-    height: 300px
-  }
 }
 
 section.resume-section {
@@ -161,8 +153,8 @@ a:hover, a:focus, a:active {
   display: inline-block; 
   position: relative; 
   margin-left: 10px;
-  width: 500px; 
-  height: 300px
+  width: 450px; 
+  height: 300px;
 }
 
 .portfolioTabs > h3 {
