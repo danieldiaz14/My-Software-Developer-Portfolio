@@ -39,6 +39,16 @@ h2 {
   font-size: 1.35rem;
 }
 
+.col-md-5.project {
+  transition-duration: 0.8s;
+}
+
+.col-md-5.project:hover {
+  margin: 10px 10px;
+  background-color: #3377FF;
+  transform: scale(1.10);
+}
+
 .list-social-icons a {
   color: #495057;
 }
@@ -63,7 +73,6 @@ h2 {
   font-weight: 600;
   text-transform: uppercase;
 }
-
 @media (min-width: 992px) {
   #sideNav {
     text-align: center;
@@ -149,10 +158,6 @@ a:hover, a:focus, a:active {
 #grabThis {
   display: block;
 }
-
-.col-sm{
-
-}
 .badges {
   display: inline-block;
   position: relative;
@@ -168,11 +173,4 @@ a:hover, a:focus, a:active {
 .badges > a {
   display: block;
   text-align: center; 
-}
-
-.project {
-  transition-duration: 0.5s;
-}
-.project:hover {
-  transform: scale(1.05);
 }
