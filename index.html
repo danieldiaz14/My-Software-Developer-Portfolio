@@ -70,7 +70,7 @@
           </h1>
           <div class="subheading mb-5">37177 Cedar Blvd · Newark, CA 94560 · (510) 921-1432 ·
             <a href="mailto:name@email.com">danieldiaz129@gmail.com</a>
-            <a target="_blank" href="https://drive.google.com/open?id=1iptPoTXCoqcK2N0MlhZPp3mBrYc8Pvyj">Resume</a>
+            <a target="_blank" href="https://drive.google.com/file/d/1SpErPpcawWCBTbp75_Fz6Bys-moo_4cn/view?usp=sharing">Resume</a>
           </div>
           <p class="mb-5">A Software Developer with a strong foundation in software engineering principles and specializes in React with Redux with Node.js for back-end.</p>
           <ul class="list-inline list-social-icons mb-0">
@@ -97,6 +97,40 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
           <h2 class="mb-5">Experience</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Frontend Software Engineer</h3>
+              <div class="subheading mb-3">Visa</div>
+              <p>Visa Checkout App</p>
+              <ul>
+                <li>Worked on the Visa Checkout App which was developed using modern web frameworks like React, Redux, Redux-Saga 
+                  and included support for cross-browser as well  as cross-device. Localized for 26 countries.
+                </li>
+                <li>
+                  Complex application that separated concerns into 3 layers. Merchant-sdk(vanilla js) which is merchant set options for the checkout experience
+                  like cards accepted, shipping/payment constraints, etc. System-sdk which launched the app and facilitated communication between the parent and child windows
+                  since our app was either an iframe or popup secure communication between the layers was needed. And last we checkout app which was the SPA UI
+                  layer of the app which was made in react and redux.
+                </li>
+                <li>
+                  Identified key areas in the app that needed testing. Led from scoping through implementation with several permutations for even the simplest flows.
+                  The end to end testing was implemented in Cypress and tests were not part of the CI builds; however, the tests were functionally accepted and my final 
+                  project at Visa was integrating it into our Jenkins(CI) builds.
+                </li>
+                <li>
+                  Debugged in all modern browsers and followed industry web standard changes. Focus on cross-browser compatibility.
+                </li>
+                <li>
+                  Contributed code to all areas of the application including the common components. These are the foundational components that were 
+                  designed to be resuable across the application.
+                </li>
+              </ul>
+            </div>
+            <div class="resume-data text-md-right">
+              <span class="text-primary">September 2019 - April 2020</span>
+            </div>
+          </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
@@ -128,22 +162,6 @@
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">January 2017 - September 2018</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">IT - AV/CV</h3>
-              <div class="subheading mb-3">FaceBook</div>
-              <p>Social Media Applications</p>
-              <ul>
-                <li>Coordinated with IT-AV team for WayFinder testing and troubleshooting.</li>
-                <li>Triaging common issues and created documentation for data analysis for issues.</li>
-                <li>Reported issues with internal ticketing system created by FaceBook.</li>
-              </ul>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">May 2016 - November 2016</span>
             </div>
           </div>
       </section>
@@ -254,16 +272,22 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-5 project">
-                  <a target="_blank" href="https://build.danieldiaz14.now.sh/"><h3 class="text-center">React Videos</h3></a>
-                  <a target="_blank" href="https://build.danieldiaz14.now.sh/"><img class="img-fluid" src="./img/React Videos.png"/></a>
+                  <a target="_blank" href="https://build.danieldiaz14.now.sh/">
+                    <h3 class="text-center">React Videos</h3>
+                    <img class="img-fluid" src="./img/React Videos.png"/>
+                  </a>
                 </div>
                 <div class="col-md-5 project">
-                  <a target="_blank" href="https://tv-search.danieldiaz14.now.sh/"><h3 class="text-center">TV Search</h3></a>
-                  <a target="_blank" href="https://tv-search.danieldiaz14.now.sh/"><img class="img-fluid" src="./img/TVSearch.png"/></a>
+                  <a target="_blank" href="https://tv-search.danieldiaz14.now.sh/">
+                    <h3 class="text-center">TV Search</h3>
+                    <img class="img-fluid" src="./img/TVSearch.png"/>
+                  </a>
                 </div>
                 <div class="col-md-5 project">
-                  <a target="_blank" href="https://daniel-bloc-jams-angular.herokuapp.com/"><h3 class="text-center">Bloc Jams</h3></a>
-                  <a target="_blank" href="https://daniel-bloc-jams-angular.herokuapp.com/"><img class="img-fluid" src="./img/BlocJams.png"/></a>
+                  <a target="_blank" href="https:/daniel-bloc-jams-angular.herokuapp.com/">
+                    <h3 class="text-center">Bloc Jams</h3>
+                    <img class="img-fluid" src="./img/BlocJams.png"/>
+                  </a>
                 </div>
               </div>
             </div>
@@ -274,10 +298,10 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Why_me">
         <div class="my-auto">
           <h2 class="mb-5">Why I Stand out</h2>
-          <p id="grabThis"></p>
+          <p id="standOutMessage"></p>
           <div class="container">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-sm-3">
                 <h3 class="text-center">Code Wars</h3>
                 <img class="img-fluid"src="https://www.codewars.com/users/DanielDiaz12/badges/large">
               </div>

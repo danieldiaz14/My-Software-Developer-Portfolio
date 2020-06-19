@@ -40,13 +40,22 @@ h2 {
 }
 
 .col-md-5.project {
-  transition-duration: 0.8s;
+  transition-duration: 2.0s;
 }
 
 .col-md-5.project:hover {
-  margin: 10px 10px;
   background-color: #3377FF;
-  transform: scale(1.10);
+  transform: scale(1.01);
+}
+
+.col-md-5.project:hover h3 {
+  color: white;
+}
+
+.col-md-5.project:hover a {
+  display: inline-block;
+  width: 100%;
+  height: 100%
 }
 
 .list-social-icons a {
@@ -111,6 +120,7 @@ h2 {
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
+
 }
 
 section.resume-section {
@@ -130,12 +140,23 @@ section.resume-section .resume-item .resume-date {
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
+  
 }
 
 @media (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
+  }
+}
+
+@media (max-width: 812px) {
+  .col-md-5.project {
+    border: 2px solid #3377FF;
+    margin-top: 0.5em;
+  }
+  .col-md-5.project:active {
+    border: 2px solid red;
   }
 }
 
@@ -155,8 +176,9 @@ a:hover, a:focus, a:active {
   color: black;
 }
 
-#grabThis {
+#standOutMessage {
   display: block;
+  font-size: 1em;
 }
 .badges {
   display: inline-block;

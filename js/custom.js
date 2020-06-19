@@ -1,8 +1,3 @@
-const message = () => {
-    const part1 = "I didn't want to learn to just code, I wanted to learn to think like a software engineer and tackle on complex problems. The thought process of trade offs, time complexity, space complexity, importance of semantics in my code, the logic behind different data structures.\nI am constantly striving to improve if you look below you'll see my badges/links from websites where I solve coding challenges.";
-    const part2 = " This isn't just a job or career path to me, this is what I personally look forward to every single day and its like an ever evolving puzzle to solve."
-    const part3 = "\nLearning to write code wasn't enough for me I personally wanted to take the time  to learn different sorting algorithms, searching, implementing different data structures, that is why you'll also see links to my github with examples as well as repl.it where I would test my code."
-    return part1 + part2 + part3;
-}
+const whyIstandOutMessage = () => `Hey thanks for visitng my portfolio I genuinely appreciate you checking it out. Why me? Software development isn't just a career path to me and to prove it allow me to share what I did during quarantine.\nI learned some node, read up on binary data, express, streams, event emitters, solved some coding challenges.\nI picked up a game called world of warcraft and created a bot using node and a C++ library called simulation craft to create simulations and output those results on Discord.\n I simply did this because it felt more convenient to use and it felt like a good project because it would be something my friends could use and i'm solving problems.\nPoint is I enjoy creating applications that people will use. I enjoy solving problems and I take pride in learning how to make them better by taking user feedback and developing new features.`
 
-document.getElementById("grabThis").innerText = message();
+document.getElementById("standOutMessage").innerText = whyIstandOutMessage();
